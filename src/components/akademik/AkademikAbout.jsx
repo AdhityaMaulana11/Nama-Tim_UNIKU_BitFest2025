@@ -10,7 +10,6 @@ export default function AkademikAbout({ fakultasName }) {
 
       <div className="mt-6 flex flex-col md:flex-row md:items-center gap-10">
         <div className="md:w-2/3 space-y-4 text-gray-700 leading-relaxed">
-          {/* teks placeholder-mu tetap, bisa diganti kapan saja dengan data fakultas */}
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
             voluptas molestias dicta nam sunt voluptatibus deserunt, id

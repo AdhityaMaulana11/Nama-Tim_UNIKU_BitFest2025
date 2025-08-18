@@ -38,7 +38,7 @@ export default function AkademikProdi({ prodi = [] }) {
                   )}
                 </button>
 
-                {/* PANEL DETAIL — muncul saat di-expand */}
+                {/* PANEL DETAIL — accordion */}
                 {isOpen && (
                   <div
                     id={`prodi-panel-${idx}`}
