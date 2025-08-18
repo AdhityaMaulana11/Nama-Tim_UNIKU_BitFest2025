@@ -1,27 +1,15 @@
-function TabButton({ active, children, ...props }) {
+function TabButton({ label, isActive, onClick }) {
   return (
     <button
-      {...props}
-      style={{
-        padding: "0.75rem 2rem",
-        borderRadius: "2rem",
-        fontWeight: "bold",
-        fontSize: "1.1rem",
-        border: active ? "none" : "2px solid #bfae3c",
-        background: active ? "#bfae3c" : "transparent",
-        color: active ? "#fff" : "#fff",
-        outline: "none",
-        cursor: "pointer",
-        transition: "all 0.2s",
-      }}
-      onMouseOver={e => {
-        if (!active) e.target.style.background = "#bfae3c22";
-      }}
-      onMouseOut={e => {
-        if (!active) e.target.style.background = "transparent";
-      }}
+      onClick={onClick}
+      className={`px-5 py-2 rounded-t-lg font-medium transition-all duration-200 
+        ${
+          isActive
+            ? "bg-[#0a3d91] text-white shadow-md"
+            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+        }`}
     >
-      {children}
+      {label}
     </button>
   );
 }

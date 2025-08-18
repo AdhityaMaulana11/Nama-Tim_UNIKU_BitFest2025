@@ -6,11 +6,10 @@ import { NavLink, Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // fungsi smooth scroll dengan offset
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const offset = -80; // tinggi navbar
+      const offset = -80;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = el.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;

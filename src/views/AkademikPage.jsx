@@ -2,9 +2,8 @@ import { lazy, Suspense, useEffect, useMemo } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { akademikData } from "../data/akademikData"; // pastikan path-nya benar
+import { akademikData } from "../data/akademikData";
 
-// lazy load untuk perf (UI tetap sama)
 const AkademikHeader = lazy(() =>
   import("../components/akademik/AkademikHeader")
 );
@@ -35,7 +34,6 @@ export default function AkademikPage() {
     return akademikData.find((f) => f.nama === targetName);
   }, [fak]);
 
-  // Jika slug tidak valid -> 404 sederhana atau redirect
   if (!fakultas) return <Navigate to="/akademik/fti" replace />;
 
   // SEO ringan
