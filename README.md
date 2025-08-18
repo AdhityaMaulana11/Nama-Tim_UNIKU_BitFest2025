@@ -1,12 +1,64 @@
-# React + Vite
+# 🌐 UCIC Cirebon Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Currently, two official plugins are available:
+Repository ini berisi source code untuk website **UCIC Cirebon** yang dibuat menggunakan **React.js**, **Vite**, dan **TailwindCSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React.js](https://react.dev/) – Library JavaScript untuk membangun UI interaktif
+- [Vite](https://vitejs.dev/) – Build tool super cepat untuk React
+- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework
+- [React Icons](https://react-icons.github.io/react-icons/) – Ikon ringan dan mudah digunakan
+
+---
+
+## 📦 Instalasi
+
+Ikuti langkah-langkah berikut untuk menjalankan project di lokal:
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/username/ucic-cirebon-website.git
+cd ucic-cirebon-website
+```
+
+### 2. Install Dependencies
+
+Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) minimal versi **16**.
+
+```bash
+npm install
+```
+
+### 3. Jalankan Development Server
+
+```bash
+npm run dev
+```
+
+Buka di browser:
+
+```
+http://localhost:5173
+```
+
+### 4. Build untuk Production
+
+```bash
+npm run build
+```
+
+Untuk menjalankan hasil build:
+
+```bash
+npm run preview
+```
+
+---
