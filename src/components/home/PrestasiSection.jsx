@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { prestasiData } from "../data/prestasiData";
+import { prestasiData } from "../../data/prestasiData";
 
-import bgPrestasi from "../assets/bg-prestasi-section.png";
+import bgPrestasi from "../../assets/bg-prestasi-section.png";
 
 export default function PrestasiSection() {
   const [current, setCurrent] = useState(0);

@@ -1,5 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
-import cicLogo from "../assets/cic-logo-big.png";
+import cicLogo from "../../assets/cic-logo-big.png";
 
 export default function AboutSection() {
   return (

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import { akademikData } from "../data/akademikData";
+import { akademikData } from "../../data/akademikData";
 
-import akademikSecBg from "../assets/Gedung-UCIC-2.png";
+import akademikSecBg from "../../assets/Gedung-UCIC-2.png";
 
 export default function AkademikSection() {
   const [openIndex, setOpenIndex] = useState(null);

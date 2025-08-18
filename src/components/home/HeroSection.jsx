@@ -1,4 +1,4 @@
-import heroImage from "../assets/ucic-cirebon.jpg";
+import heroImage from "../../assets/ucic-cirebon.jpg";
 
 export default function HeroSection() {
   return (

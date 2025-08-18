@@ -1,11 +1,11 @@
-import LabKomputer from "../assets/images/Ruang-Lab-Komputer-2.png";
-import SanFrancisco from "../assets/images/Ruang-San-Francisco.png";
-import Perpustakaan from "../assets/images/Perpustakaan.png";
-import Auditorium from "../assets/images/Ruang-Auditorium-2.png";
-import LabPemrograming from "../assets/images/Lab-Programming.png";
-import Aula from "../assets/images/aula.png";
-import RuangKelas1 from "../assets/images/Ruang-Kelas-1.png";
-import RuangKelas2 from "../assets/images/Ruang-Kelas-3.png";
+import LabKomputer from "../../assets/images/Ruang-Lab-Komputer-2.png";
+import SanFrancisco from "../../assets/images/Ruang-San-Francisco.png";
+import Perpustakaan from "../../assets/images/Perpustakaan.png";
+import Auditorium from "../../assets/images/Ruang-Auditorium-2.png";
+import LabPemrograming from "../../assets/images/Lab-Programming.png";
+import Aula from "../../assets/images/aula.png";
+import RuangKelas1 from "../../assets/images/Ruang-Kelas-1.png";
+import RuangKelas2 from "../../assets/images/Ruang-Kelas-3.png";
 
 const fasilitas = [
   { id: "a", title: "Lab Komputer", image: LabKomputer },

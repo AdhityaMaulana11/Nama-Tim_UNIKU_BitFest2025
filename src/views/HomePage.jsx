@@ -1,10 +1,10 @@
-import AboutSection from "../components/AboutSection";
-import AkademikSection from "../components/AkademikSection";
-import FasilitasMahasiswaSection from "../components/FasilitasMahasiswaSection";
+import AboutSection from "../components/home/AboutSection";
+import AkademikSection from "../components/home/AkademikSection";
+import FasilitasMahasiswaSection from "../components/home/FasilitasMahasiswaSection";
 import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 import Navbar from "../components/Navbar";
-import PrestasiSection from "../components/PrestasiSection";
+import PrestasiSection from "../components/home/PrestasiSection";
 
 export default function HomePage() {
   return (
