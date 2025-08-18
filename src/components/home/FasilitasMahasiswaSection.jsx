@@ -20,7 +20,7 @@ const fasilitas = [
 
 export default function FasilitasMahasiswaSection() {
   return (
-    <section className="py-16 bg-white">
+    <section id="fasilitas" className="py-16 bg-white">
       {/* Judul */}
       <h2 className="text-2xl md:text-3xl font-bold text-center text-[#0A2342] mb-10">
         FASILITAS MAHASISWA

@@ -6,6 +6,23 @@ import { NavLink, Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // fungsi smooth scroll dengan offset
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = -80; // tinggi navbar
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = el.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition + offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-4">
@@ -95,26 +112,30 @@ export default function Navbar() {
               </div>
             </li>
 
+            {/* Smooth Scroll Links */}
             <li>
-              <a
-                href="#fasilitas"
+              <button
+                onClick={() => scrollToSection("fasilitas")}
                 className="text-[#0a2540] hover:text-[#002E5B]"
               >
                 Fasilitas
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#prestasi"
+              <button
+                onClick={() => scrollToSection("prestasi")}
                 className="text-[#0a2540] hover:text-[#002E5B]"
               >
                 Prestasi
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#berita" className="text-[#0a2540] hover:text-[#002E5B]">
+              <button
+                onClick={() => scrollToSection("berita")}
+                className="text-[#0a2540] hover:text-[#002E5B]"
+              >
                 Berita
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
@@ -207,14 +228,36 @@ export default function Navbar() {
               </ul>
             </li>
 
+            {/* Smooth Scroll Links Mobile */}
             <li>
-              <a href="#fasilitas">Fasilitas</a>
+              <button
+                onClick={() => {
+                  scrollToSection("fasilitas");
+                  setIsOpen(false);
+                }}
+              >
+                Fasilitas
+              </button>
             </li>
             <li>
-              <a href="#prestasi">Prestasi</a>
+              <button
+                onClick={() => {
+                  scrollToSection("prestasi");
+                  setIsOpen(false);
+                }}
+              >
+                Prestasi
+              </button>
             </li>
             <li>
-              <a href="#berita">Berita</a>
+              <button
+                onClick={() => {
+                  scrollToSection("berita");
+                  setIsOpen(false);
+                }}
+              >
+                Berita
+              </button>
             </li>
           </ul>
         </div>
