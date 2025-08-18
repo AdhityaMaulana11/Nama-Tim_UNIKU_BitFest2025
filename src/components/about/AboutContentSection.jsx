@@ -45,7 +45,7 @@ function AboutContentSection({ data }) {
                     Visi
                   </h4>
                   <p className="text-[#222] text-base leading-relaxed italic">
-                    "{data.visi}"
+                    {data.visi}
                   </p>
                 </section>
               )}
