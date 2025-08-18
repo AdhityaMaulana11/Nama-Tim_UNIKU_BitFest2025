@@ -6,24 +6,17 @@ import AboutContentSection from "../components/about/AboutContentSection";
 
 export default function AboutPage() {
   return (
-    <div
-      style={{
-        background: "linear-gradient(180deg, #0a3d91 0%, #1976d2 100%)",
-        minHeight: "100vh",
-      }}
-    >
+    <div className="min-h-screen bg-gradient-to-b from-[#0a3d91] to-[#1976d2]">
       <Navbar />
-      <AboutHeaderSection />
-      <AboutTabsSection />
-      <hr
-        style={{
-          border: "none",
-          borderBottom: "1px solid #e0e0e0",
-          margin: "0 auto 1.5rem auto",
-          width: "90%",
-        }}
-      />
-      <AboutContentSection />
+
+      {/* Tambahin padding-top biar konten turun */}
+      <main className="pt-24">
+        <AboutHeaderSection />
+        <AboutTabsSection />
+        <hr className="border-b border-[#e0e0e0] w-[90%] mx-auto my-6" />
+        <AboutContentSection />
+      </main>
+
       <Footer />
     </div>
   );
