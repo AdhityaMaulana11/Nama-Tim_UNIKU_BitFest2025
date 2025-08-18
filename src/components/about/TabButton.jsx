@@ -1,29 +1,18 @@
-function TabButton({ active, children, ...props }) {
+export default function TabButton({ active, children, ...props }) {
   return (
     <button
       {...props}
-      style={{
-        padding: "0.75rem 2rem",
-        borderRadius: "2rem",
-        fontWeight: "bold",
-        fontSize: "1.1rem",
-        border: active ? "none" : "2px solid #bfae3c",
-        background: active ? "#bfae3c" : "transparent",
-        color: "#fff",
-        outline: "none",
-        cursor: "pointer",
-        transition: "all 0.2s",
-      }}
-      onMouseOver={e => {
-        if (!active) e.target.style.background = "#bfae3c22";
-      }}
-      onMouseOut={e => {
-        if (!active) e.target.style.background = "transparent";
-      }}
+      className={`
+        px-8 py-3 rounded-full font-bold text-[1.1rem] text-white cursor-pointer
+        transition-all duration-200 outline-none
+        ${
+          active
+            ? "bg-[#bfae3c] border-0"
+            : "border-2 border-[#bfae3c] bg-transparent hover:bg-[#bfae3c]/20"
+        }
+      `}
     >
       {children}
     </button>
   );
 }
-
-export default TabButton;
