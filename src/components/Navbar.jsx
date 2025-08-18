@@ -27,41 +27,12 @@ export default function Navbar() {
 
             {/* Tentang UCIC */}
             <li className="relative group">
-              <button
-                type="button"
+              <Link
+                to="/tentang-ucic"
                 className="flex items-center space-x-1 hover:text-blue-800"
               >
-                <span>Tentang UCIC</span>
-                <FiChevronDown className="text-sm" />
-              </button>
-              <div className="absolute left-0 top-full pt-3 z-40 opacity-0 invisible pointer-events-none translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 transition">
-                <ul className="w-56 bg-white shadow-lg rounded-md py-2">
-                  <li>
-                    <a
-                      href="#sambutan-rektor"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Sambutan Rektor
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#visi-misi"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Visi, Misi, & Tujuan
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#sejarah-cic"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      Sejarah CIC
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                Tentang UCIC
+              </Link>
             </li>
 
             {/* Akademik */}
