@@ -1,4 +1,5 @@
 import Logo from "../assets/cic-logo.png";
+import { FaInstagram, FaYoutube, FaGlobe, FaFacebook } from "react-icons/fa"; 
 
 export default function Footer() {
   return (
@@ -41,9 +42,21 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold">More Info:</h3>
             <div className="flex space-x-4 mt-3">
-              {[1, 2, 3, 4].map((i) => (
+              {/* {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="w-12 h-12 bg-white rounded-lg" />
-              ))}
+              ))} */}
+              <a href="https://instagram.com/universitas_cic" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition">
+                <FaInstagram size={28} color="#E1306C" />
+              </a>
+              <a href="https://www.youtube.com/@universitascic" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition">
+                <FaYoutube size={28} color="#FF0000" />
+              </a>
+              <a href="https://cic.ac.id" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition">
+                <FaGlobe size={28} color="#002E5B" />
+              </a>
+              <a href="https://www.facebook.com/stmik.cic.3" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-lg flex items-center justify-center hover:bg-gray-100 transition">
+                <FaFacebook size={28} color="#1877F3" />
+              </a>
             </div>
           </div>
         </div>
