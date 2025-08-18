@@ -1,5 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 import cicLogo from "../../assets/cic-logo-big.png";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -29,12 +30,21 @@ export default function AboutSection() {
           hanya mencetak lulusan yang kompeten, tetapi juga berperan aktif dalam
           pengabdian kepada masyarakat dan pembangunan berkelanjutan.
         </p>
-        <button
+        <Link
+          to="/tentang-ucic"
           aria-label="Selengkapnya tentang UCIC"
-          className="flex items-center gap-2 border border-[#0C2D57] text-[#0C2D57] font-medium px-5 py-2 rounded-full hover:bg-[#A48F03] hover:text-white transition"
+          className="inline-flex items-center gap-2 px-6 py-2.5 
+             border border-[#0C2D57] text-[#0C2D57] font-medium 
+             rounded-full transition-all duration-300 
+             hover:bg-[#A48F03] hover:border-[#A48F03] hover:text-white 
+             focus:outline-none focus:ring-2 focus:ring-[#A48F03] focus:ring-offset-2"
         >
-          Selengkapnya <FiArrowRight size={18} />
-        </button>
+          <span>Selengkapnya</span>
+          <FiArrowRight
+            className="transition-transform duration-300 group-hover:translate-x-1"
+            size={18}
+          />
+        </Link>
       </div>
 
       {/* Kanan */}
