@@ -25,7 +25,7 @@ export default function PrestasiSection() {
       <div className="absolute inset-0 bg-[#002E5B]/70" aria-hidden="true" />
 
       {/* Prestasi */}
-      <section className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4">
+      <section className="relative z-20 flex flex-col items-center justify-center min-h-screen py-16 px-4">
         {/* Heading */}
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-md mb-10">
           PRESTASI
