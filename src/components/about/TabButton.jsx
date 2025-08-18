@@ -3,12 +3,15 @@ export default function TabButton({ active, children, ...props }) {
     <button
       {...props}
       className={`
-        px-8 py-3 rounded-full font-bold text-[1.1rem] text-white cursor-pointer
+        flex-1 md:flex-none
+        px-4 sm:px-6 md:px-8 py-2 sm:py-3
+        rounded-full font-semibold sm:font-bold
+        text-sm sm:text-base md:text-[1.05rem]
         transition-all duration-200 outline-none
         ${
           active
-            ? "bg-[#bfae3c] border-0"
-            : "border-2 border-[#bfae3c] bg-transparent hover:bg-[#bfae3c]/20"
+            ? "bg-[#bfae3c] text-white shadow-md"
+            : "border-2 border-[#bfae3c] text-[#bfae3c] hover:bg-[#bfae3c]/20"
         }
       `}
     >

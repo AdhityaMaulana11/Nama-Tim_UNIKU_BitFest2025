@@ -1,17 +1,17 @@
-function TabButton({ label, isActive, onClick }) {
+export default function TabButton({ active, children, ...props }) {
   return (
     <button
-      onClick={onClick}
-      className={`px-5 py-2 rounded-t-lg font-medium transition-all duration-200 
+      {...props}
+      className={`
+        px-6 py-3 rounded-full font-bold text-base sm:text-lg transition-all duration-200
         ${
-          isActive
-            ? "bg-[#0a3d91] text-white shadow-md"
-            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-        }`}
+          active
+            ? "bg-[#bfae3c] border-none text-white"
+            : "border-2 border-[#bfae3c] bg-transparent text-white hover:bg-[#bfae3c]/20"
+        }
+      `}
     >
-      {label}
+      {children}
     </button>
   );
 }
-
-export default TabButton;

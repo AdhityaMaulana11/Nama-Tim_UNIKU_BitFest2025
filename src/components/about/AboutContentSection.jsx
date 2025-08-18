@@ -4,20 +4,31 @@ function AboutContentSection({ data }) {
     <div className="w-[90%] max-w-[1200px] mx-auto mb-8">
       {/* Plain text */}
       {data.plainText && (
-        <div className="text-white text-[1.1rem] mb-6">
-          <pre className="whitespace-pre-wrap font-sans bg-none m-0">
-            {data.plainText}
-          </pre>
-        </div>
+        <section className="bg-white rounded-xl shadow-md p-8 mb-6">
+          <h3 className="font-bold mb-4 text-[#0a3d91] text-lg">Overview</h3>
+          <div className="space-y-4 text-justify text-[#222] text-base leading-relaxed">
+            {data.plainText.split("\n").map((paragraph, idx) => (
+              <p key={idx} className="mb-2">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </section>
       )}
 
       {/* Container text */}
       {data.containerText && (
         <section className="bg-white rounded-xl shadow-md p-8 mb-6">
-          <h3 className="font-bold mb-4 text-[#0a3d91]">{data.title}</h3>
-          <pre className="whitespace-pre-wrap font-sans text-base text-[#222] m-0">
-            {data.containerText}
-          </pre>
+          <h3 className="font-bold mb-4 text-[#0a3d91] text-lg">
+            {data.title}
+          </h3>
+          <div className="space-y-4 text-justify text-[#222] text-base leading-relaxed">
+            {data.containerText.split("\n").map((paragraph, idx) => (
+              <p key={idx} className="mb-2">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </section>
       )}
 

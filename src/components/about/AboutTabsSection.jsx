@@ -10,16 +10,23 @@ export default function AboutTabsSection() {
   return (
     <>
       {/* Tabs */}
-      <div className="flex justify-center gap-4 my-6">
-        {aboutTabsData.map((tab) => (
-          <TabButton
-            key={tab.key}
-            active={activeTab === tab.key}
-            onClick={() => setActiveTab(tab.key)}
-          >
-            {tab.label}
-          </TabButton>
-        ))}
+      <div className="w-full my-6 px-4">
+        <div
+          className="
+            flex flex-wrap justify-center gap-3 sm:gap-4
+            md:flex-nowrap md:justify-center
+          "
+        >
+          {aboutTabsData.map((tab) => (
+            <TabButton
+              key={tab.key}
+              active={activeTab === tab.key}
+              onClick={() => setActiveTab(tab.key)}
+            >
+              {tab.label}
+            </TabButton>
+          ))}
+        </div>
       </div>
 
       {/* Divider */}
