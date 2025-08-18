@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import logoUCIC from "../assets/cic-logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,21 +9,20 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-4">
-        {/* Logo */}
-        <a href="/" className="flex items-center" aria-label="UCIC Cirebon">
+        <Link to="/" className="flex items-center" aria-label="UCIC Cirebon">
           <img src={logoUCIC} alt="UCIC Logo" className="h-14 w-auto" />
-        </a>
+        </Link>
 
-        {/* Desktop View */}
+        {/* Desktop */}
         <nav className="hidden md:block" aria-label="Primary">
           <ul className="flex space-x-8 text-[#0a2540] font-medium">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-blue-800 border-b-2 border-yellow-400 pb-1"
               >
                 Beranda
-              </a>
+              </Link>
             </li>
 
             {/* Tentang UCIC */}
@@ -30,22 +30,11 @@ export default function Navbar() {
               <button
                 type="button"
                 className="flex items-center space-x-1 hover:text-blue-800"
-                aria-haspopup="true"
-                aria-expanded="false"
               >
                 <span>Tentang UCIC</span>
                 <FiChevronDown className="text-sm" />
               </button>
-
-              {/* Wrapper - hover */}
-              <div
-                className="
-                  absolute left-0 top-full pt-3 z-40
-                  opacity-0 invisible pointer-events-none translate-y-1
-                  group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0
-                  transition
-                "
-              >
+              <div className="absolute left-0 top-full pt-3 z-40 opacity-0 invisible pointer-events-none translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 transition">
                 <ul className="w-56 bg-white shadow-lg rounded-md py-2">
                   <li>
                     <a
@@ -80,45 +69,35 @@ export default function Navbar() {
               <button
                 type="button"
                 className="flex items-center space-x-1 hover:text-blue-800"
-                aria-haspopup="true"
-                aria-expanded="false"
               >
                 <span>Akademik</span>
                 <FiChevronDown className="text-sm" />
               </button>
-
-              <div
-                className="
-                  absolute left-0 top-full pt-3 z-40
-                  opacity-0 invisible pointer-events-none translate-y-1
-                  group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0
-                  transition
-                "
-              >
+              <div className="absolute left-0 top-full pt-3 z-40 opacity-0 invisible pointer-events-none translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 transition">
                 <ul className="w-72 bg-white shadow-lg rounded-md py-2">
                   <li>
-                    <a
-                      href="#fti"
+                    <Link
+                      to="/akademik/fti"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Fakultas Teknologi & Informasi (FTI)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#feb"
+                    <Link
+                      to="/akademik/feb"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Fakultas Ekonomi & Bisnis (FEB)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#fps"
+                    <Link
+                      to="/akademik/fps"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Fakultas Pendidikan & Sains
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -162,12 +141,12 @@ export default function Navbar() {
         >
           <ul className="flex flex-col space-y-3 px-6 py-4 text-[#0a2540] font-medium">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-blue-800 border-b-2 border-yellow-400 pb-1"
               >
                 Beranda
-              </a>
+              </Link>
             </li>
 
             <li>
@@ -189,13 +168,17 @@ export default function Navbar() {
               <span className="font-semibold">Akademik</span>
               <ul className="ml-4 mt-2 space-y-2 text-sm">
                 <li>
-                  <a href="#fti">Fakultas Teknologi & Informasi (FTI)</a>
+                  <Link to="/akademik/fti">
+                    Fakultas Teknologi & Informasi (FTI)
+                  </Link>
                 </li>
                 <li>
-                  <a href="#feb">Fakultas Ekonomi & Bisnis (FEB)</a>
+                  <Link to="/akademik/feb">
+                    Fakultas Ekonomi & Bisnis (FEB)
+                  </Link>
                 </li>
                 <li>
-                  <a href="#fps">Fakultas Pendidikan & Sains</a>
+                  <Link to="/akademik/fps">Fakultas Pendidikan & Sains</Link>
                 </li>
               </ul>
             </li>
