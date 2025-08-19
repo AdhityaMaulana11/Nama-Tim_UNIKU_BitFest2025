@@ -20,21 +20,21 @@ export default function NewsContentSection({ data }) {
                   className="w-full h-40 object-cover"
                 />
               )}
+              <div className="p-5 flex flex-col flex-1">
+                {/* Category label */}
+                {item.category && (
+                  <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#f5f7fa] text-[#0a3d91] mb-2">
+                    {item.category}
+                  </span>
+                )}
+                <h3 className="font-bold text-[#0a3d91] text-lg mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[#1976d2] text-sm mb-2 font-semibold">
+                  {item.date}
+                </p>
+              </div>
             </Link>
-            <div className="p-5 flex flex-col flex-1">
-              {/* Category label */}
-              {item.category && (
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#f5f7fa] text-[#0a3d91] mb-2">
-                  {item.category}
-                </span>
-              )}
-              <h3 className="font-bold text-[#0a3d91] text-lg mb-2">
-                {item.title}
-              </h3>
-              <p className="text-[#1976d2] text-sm mb-2 font-semibold">
-                {item.date}
-              </p>
-            </div>
           </div>
         ))}
       </div>
