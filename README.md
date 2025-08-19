@@ -62,3 +62,14 @@ npm run preview
 ```
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Hero Section](./screenshots/homePage-hero.png)  
+![Prestasi Section](./screenshots/homePage-prestasi.png)  
+![Fasilitas Section](./screenshots/homePage-fasilitas.png)  
+![Warta Section](./screenshots/homePage-warta.png)  
+![About Section](./screenshots/homePage-about.png)  
+![Footer](./screenshots/homePage-footer.png)
+
+---
