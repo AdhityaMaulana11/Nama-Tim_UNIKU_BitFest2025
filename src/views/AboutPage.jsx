@@ -6,7 +6,7 @@ import AboutContentSection from "../components/about/AboutContentSection";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a3d91] to-[#1976d2]">
+    <div className="min-h-screen bg-gradient-to-l from-[#002E5B] to-[#0062C1]">
       <Navbar />
       <main className="pt-24">
         <AboutHeaderSection />
