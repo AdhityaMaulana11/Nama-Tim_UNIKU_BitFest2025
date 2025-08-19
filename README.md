@@ -36,7 +36,7 @@ Ikuti langkah-langkah berikut untuk menjalankan project di lokal:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/ucic-cirebon-website.git
+git clone https://github.com/AdhityaMaulana11/UI-Lite_UNIKU_BitFest2025
 cd ucic-cirebon-website
 ```
 
