@@ -116,7 +116,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="bg-[#3c3c3c] text-gray-300 text-center py-4 text-sm">
-        © 2025 Nama_Kelompok_Kita_Gengs — All Rights Reserved.
+        © 2025 UI-Lite — All Rights Reserved.
       </div>
     </footer>
   );
