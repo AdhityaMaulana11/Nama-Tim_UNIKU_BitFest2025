@@ -5,7 +5,7 @@ export default function AkademikProdi({ prodi = [] }) {
   const [open, setOpen] = useState(null);
 
   return (
-    <section className="bg-gradient-to-br from-blue-900 to-blue-600 py-16 text-white">
+    <section className="bg-gradient-to-l from-[#002E5B] to-[#0062C1] py-16 text-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <h2 className="text-center text-3xl md:text-4xl font-bold mb-10">
           PROGRAM STUDI
