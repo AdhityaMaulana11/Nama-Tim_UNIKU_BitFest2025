@@ -13,7 +13,7 @@ export default function AboutSection() {
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#002E5B] mb-6 leading-snug">
           TENTANG UCIC
         </h2>
-        <p className="text-gray-800 leading-relaxed mb-4">
+        <p className="text-gray-800 leading-relaxed text-justify mb-4">
           <strong>Universitas Catur Insan Cendekia (UCIC)</strong> resmi berdiri
           pada tahun 2019 melalui penggabungan Akademi Perdagangan CIC dan STMIK
           CIC telah memperoleh akreditasi <strong>“Baik”</strong> sebagai
@@ -23,7 +23,7 @@ export default function AboutSection() {
           <strong>Fakultas Pendidikan dan Sains</strong> dengan fokus pada
           pengembangan ilmu pengetahuan, teknologi, dan kewirausahaan.
         </p>
-        <p className="text-gray-800 leading-relaxed mb-8">
+        <p className="text-gray-800 leading-relaxed text-justify mb-8">
           Sebagai holding, UCIC menaungi berbagai unit di bidang pendidikan,
           sosial, dan bisnis, mulai dari sekolah internasional, pusat pelatihan
           bahasa, hingga startup teknologi. Melalui ekosistem ini, UCIC tidak
