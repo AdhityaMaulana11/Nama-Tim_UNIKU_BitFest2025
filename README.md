@@ -1,4 +1,15 @@
 # 🌐 UCIC Cirebon Website
+Website Universitas Catur Insan Cendekia (UCIC) dibangun sebagai media resmi informasi dan promosi kampus. Dengan adanya website ini, UCIC diharapkan semakin dikenal masyarakat dan calon mahasiswa, serta menjadi sarana utama untuk mencari informasi secara mudah, cepat, dan terpercaya.
+
+Website ini memiliki beberapa menu utama, yaitu:
+- Home Page → Menampilkan profil singkat, berita terbaru, dan highlight kegiatan kampus.
+- Tentang UCIC → Berisi sejarah, visi-misi, nilai-nilai, tujuan universitas.
+- Akademik → Informasi mengenai program studi dan kurikulum.
+-Fasilitas → Menyajikan sarana dan prasarana yang tersedia untuk mendukung proses pembelajaran.
+-Prestasi → Dokumentasi capaian mahasiswa. 
+- Berita → Berisi rangkuman kegiatan/berita UCIC. 
+
+Dengan struktur menu ini, website UCIC dirancang untuk memberikan pengalaman terbaik bagi pengunjung, baik calon mahasiswa, orang tua, maupun masyarakat umum.
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
