@@ -1,19 +1,25 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-function NewsContentSection({ data }) {
+export default function NewsContentSection({ data }) {
   if (!data || !data.items) return null;
 
   return (
     <div className="w-[90%] max-w-[1200px] mx-auto mb-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
         {data.items.map((item, idx) => (
-          <div key={item.id || idx} className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+          <div
+            key={item.id || idx}
+            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+          >
             <Link to={`/warta-ucic/${item.id}`}>
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-40 object-cover"
-              />
+              {item.image && (
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  className="w-full h-40 object-cover"
+                />
+              )}
             </Link>
             <div className="p-5 flex flex-col flex-1">
               {/* Category label */}
@@ -35,5 +41,3 @@ function NewsContentSection({ data }) {
     </div>
   );
 }
-
-export default NewsContentSection;
