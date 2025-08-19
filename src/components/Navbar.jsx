@@ -1,52 +1,36 @@
 import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import logoUCIC from "../assets/cic-logo.png";
-import { NavLink, Link } from "react-router-dom";
+import ScrollLink from "./ScrollLink";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      const offset = -80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = el.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition + offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-4">
-        <Link to="/" className="flex items-center" aria-label="UCIC Cirebon">
+        {/* Logo */}
+        <ScrollLink
+          to="top"
+          className="flex items-center"
+          disableActive
+          aria-label="UCIC Cirebon"
+        >
           <img src={logoUCIC} alt="UCIC Logo" className="h-14 w-auto" />
-        </Link>
+        </ScrollLink>
 
         {/* Desktop */}
         <nav className="hidden md:block" aria-label="Primary">
           <ul className="flex space-x-8 font-medium">
             <li>
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#002E5B] border-b-2 border-[#A48F03] pb-1"
-                    : "text-[#0a2540] hover:text-[#002E5B]"
-                }
+              <ScrollLink
+                to="top"
+                className="text-[#0a2540] hover:text-[#002E5B]"
               >
                 Beranda
-              </NavLink>
+              </ScrollLink>
             </li>
-
-            {/* Tentang UCIC */}
             <li>
               <NavLink
                 to="/tentang-ucic"
@@ -59,7 +43,6 @@ export default function Navbar() {
                 Tentang UCIC
               </NavLink>
             </li>
-
             {/* Akademik */}
             <li className="relative group">
               <button
@@ -110,25 +93,23 @@ export default function Navbar() {
                 </ul>
               </div>
             </li>
-
             {/* Smooth Scroll Links */}
             <li>
-              <button
-                onClick={() => scrollToSection("fasilitas")}
+              <ScrollLink
+                to="fasilitas"
                 className="text-[#0a2540] hover:text-[#002E5B]"
               >
                 Fasilitas
-              </button>
+              </ScrollLink>
             </li>
             <li>
-              <button
-                onClick={() => scrollToSection("prestasi")}
+              <ScrollLink
+                to="prestasi"
                 className="text-[#0a2540] hover:text-[#002E5B]"
               >
                 Prestasi
-              </button>
+              </ScrollLink>
             </li>
-            {/* Berita */}
             <li>
               <NavLink
                 to="/warta-ucic"
@@ -138,7 +119,7 @@ export default function Navbar() {
                     : "text-[#0a2540] hover:text-[#002E5B]"
                 }
               >
-                Berita{" "}
+                Berita
               </NavLink>
             </li>
           </ul>
@@ -164,19 +145,10 @@ export default function Navbar() {
         >
           <ul className="flex flex-col space-y-3 px-6 py-4 text-[#0a2540] font-medium">
             <li>
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#002E5B] border-b-2 border-[#A48F03] pb-1"
-                    : "hover:text-[#002E5B]"
-                }
-              >
+              <ScrollLink to="top" onClick={() => setIsOpen(false)}>
                 Beranda
-              </NavLink>
+              </ScrollLink>
             </li>
-
             <li>
               <NavLink
                 to="/tentang-ucic"
@@ -189,7 +161,6 @@ export default function Navbar() {
                 Tentang UCIC
               </NavLink>
             </li>
-
             <li>
               <span className="font-semibold">Akademik</span>
               <ul className="ml-4 mt-2 space-y-2 text-sm">
@@ -231,27 +202,16 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-
             {/* Smooth Scroll Links Mobile */}
             <li>
-              <button
-                onClick={() => {
-                  scrollToSection("fasilitas");
-                  setIsOpen(false);
-                }}
-              >
+              <ScrollLink to="fasilitas" onClick={() => setIsOpen(false)}>
                 Fasilitas
-              </button>
+              </ScrollLink>
             </li>
             <li>
-              <button
-                onClick={() => {
-                  scrollToSection("prestasi");
-                  setIsOpen(false);
-                }}
-              >
+              <ScrollLink to="prestasi" onClick={() => setIsOpen(false)}>
                 Prestasi
-              </button>
+              </ScrollLink>
             </li>
             <li>
               <NavLink
