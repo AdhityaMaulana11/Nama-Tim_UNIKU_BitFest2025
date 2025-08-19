@@ -1,3 +1,5 @@
+import BackButton from "./BackButton";
+
 // export default function NewsHeaderSection({ onBack }) {
 //   return (
 //     <div className="flex items-center gap-4 py-6 px-2 md:px-0">
@@ -11,7 +13,6 @@
 //     </div>
 //   );
 // }
-
 
 export default function AboutHeaderSection() {
   return (

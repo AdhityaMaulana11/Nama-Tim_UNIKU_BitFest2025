@@ -47,15 +47,15 @@ const allNews = [
     summary: "Kolaborasi UCIC dengan Griya Karya Harapanku dalam mendukung masyarakat berkebutuhan khusus.",
     image: "assets/images/berita6.jpg",
     category: "Berita"
-  },
-  {
-    id: 7,
-    title: "Pendaftaran Mahasiswa Baru 2025",
-    date: "1 Agustus 2025",
-    summary: "Pendaftaran mahasiswa baru UCIC tahun ajaran 2025/2026 telah dibuka.",
-    image: "assets/images/berita3.jpg",
-    category: "Pengumuman"
   }
+//   {
+//     id: 7,
+//     title: "Pendaftaran Mahasiswa Baru 2025",
+//     date: "1 Agustus 2025",
+//     summary: "Pendaftaran mahasiswa baru UCIC tahun ajaran 2025/2026 telah dibuka.",
+//     image: "assets/images/berita3.jpg",
+//     category: "Pengumuman"
+//   }
 ];
 
 const newsTabsData = [
