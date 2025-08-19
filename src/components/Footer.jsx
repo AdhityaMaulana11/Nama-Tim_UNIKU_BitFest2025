@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full" role="contentinfo">
       {/* Atas - Logo */}
-      <div className="bg-white py-6 px-4 flex justify-start">
+      <div className="bg-white py-6 flex justify-start px-6 lg:px-10">
         <img
           src={Logo}
           alt="Logo Universitas Catur Insan Cendekia (UCIC)"
