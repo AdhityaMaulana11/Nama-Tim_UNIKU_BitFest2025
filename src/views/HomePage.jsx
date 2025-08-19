@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/home/HeroSection";
 import Navbar from "../components/Navbar";
 import PrestasiSection from "../components/home/PrestasiSection";
+import WartaSection from "../components/home/WartaSection";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <AkademikSection />
       <FasilitasMahasiswaSection />
       <PrestasiSection />
+      <WartaSection />
       <Footer />
     </div>
   );
