@@ -66,10 +66,10 @@ npm run preview
 
 ### 🏠 Home Page
 ![Hero Section](./screenshots/homePage-hero.png)  
+![About Section](./screenshots/homePage-about.png)  
 ![Prestasi Section](./screenshots/homePage-prestasi.png)  
 ![Fasilitas Section](./screenshots/homePage-fasilitas.png)  
 ![Warta Section](./screenshots/homePage-warta.png)  
-![About Section](./screenshots/homePage-about.png)  
 ![Footer](./screenshots/homePage-footer.png)
 
 ---
