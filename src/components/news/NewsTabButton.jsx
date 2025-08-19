@@ -7,7 +7,7 @@ export default function TabButton({ active, children, ...props }) {
         ${
           active
             ? "bg-[#A48F03] border-none text-white"
-            : "border-2 border-[#A48F03] bg-transparent text-white hover:bg-[#A48F03]/20"
+            : "border-2 border-[#A48F03] bg-transparent text-[#A48F03] hover:bg-[#A48F03]/20"
         }
       `}
     >

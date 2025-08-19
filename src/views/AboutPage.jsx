@@ -11,7 +11,6 @@ export default function AboutPage() {
       <main className="pt-24">
         <AboutHeaderSection />
         <AboutTabsSection />
-        <hr className="border-b border-[#e0e0e0] w-[90%] mx-auto my-6" />
         <AboutContentSection />
       </main>
       <Footer />
