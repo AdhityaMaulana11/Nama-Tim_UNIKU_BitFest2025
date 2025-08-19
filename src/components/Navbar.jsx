@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import logoUCIC from "../assets/cic-logo.png";
 import ScrollLink from "./ScrollLink";
@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* Desktop */}
         <nav className="hidden md:block" aria-label="Primary">
-          <ul className="flex space-x-8 font-medium">
+          <ul className="flex space-x-8 font-medium items-center">
             <li>
               <ScrollLink
                 to="top"
