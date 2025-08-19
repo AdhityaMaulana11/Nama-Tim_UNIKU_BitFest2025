@@ -30,7 +30,7 @@ export default function PrestasiSection() {
         className="relative z-20 flex flex-col items-center justify-center min-h-screen py-16 px-4"
       >
         {/* Heading */}
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-md mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center drop-shadow-md mb-10">
           PRESTASI
         </h2>
 

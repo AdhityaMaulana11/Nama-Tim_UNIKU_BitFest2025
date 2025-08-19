@@ -23,7 +23,7 @@ export default function WartaSection() {
   return (
     <section className="w-full py-16 bg-white">
       <div className="w-[90%] max-w-[1200px] mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#0A2342] mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#002E5B] mb-10">
           WARTA UCIC
         </h2>
 

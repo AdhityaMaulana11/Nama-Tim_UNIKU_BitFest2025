@@ -10,7 +10,7 @@ export default function AboutSection() {
     >
       {/* Kiri */}
       <div className="lg:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#0C2D57] mb-6 leading-snug">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#002E5B] mb-6 leading-snug">
           TENTANG UCIC
         </h2>
         <p className="text-gray-800 leading-relaxed mb-4">

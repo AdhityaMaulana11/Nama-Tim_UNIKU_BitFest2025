@@ -22,7 +22,7 @@ export default function FasilitasMahasiswaSection() {
   return (
     <section id="fasilitas" className="py-16 bg-white">
       {/* Judul */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-[#0A2342] mb-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#002E5B] mb-10">
         FASILITAS MAHASISWA
       </h2>
 
