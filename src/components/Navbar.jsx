@@ -128,13 +128,17 @@ export default function Navbar() {
                 Prestasi
               </button>
             </li>
+            {/* Berita */}
             <li>
-              <button
-                onClick={() => scrollToSection("berita")}
-                className="text-[#0a2540] hover:text-[#002E5B]"
+              <NavLink
+                to="/warta-ucic"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#002E5B] border-b-2 border-[#A48F03] pb-1"
+                    : "text-[#0a2540] hover:text-[#002E5B]"
+                }
               >
-                Berita
-              </button>
+                Berita              </NavLink>
             </li>
           </ul>
         </nav>
@@ -249,14 +253,16 @@ export default function Navbar() {
               </button>
             </li>
             <li>
-              <button
-                onClick={() => {
-                  scrollToSection("berita");
-                  setIsOpen(false);
-                }}
+              <NavLink
+                to="/berita-ucic"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#002E5B] border-b-2 border-[#A48F03] pb-1"
+                    : "text-[#0a2540] hover:text-[#002E5B]"
+                }
               >
-                Berita
-              </button>
+                Tentang UCIC
+              </NavLink>
             </li>
           </ul>
         </div>
