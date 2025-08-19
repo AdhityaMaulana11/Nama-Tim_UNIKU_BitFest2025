@@ -3,7 +3,7 @@ import headerImage from "../../assets/Gedung-UCIC-2.png";
 export default function AkademikHeader({ title, subtitle }) {
   return (
     <section
-      className="relative w-full h-[400px] md:h-[480px] flex items-center justify-center text-center text-white"
+      className="relative w-full min-h-screen md:h-[480px] flex items-center justify-center text-center text-white"
       style={{
         backgroundImage: `url(${headerImage})`,
         backgroundSize: "cover",

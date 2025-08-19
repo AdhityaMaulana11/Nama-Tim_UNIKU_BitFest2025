@@ -9,7 +9,7 @@ export default function NewsContentSection({ data }) {
         {data.items.map((item, idx) => (
           <div
             key={item.id || idx}
-            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col"
+            className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition"
           >
             <Link to={`/warta-ucic/${item.id}`}>
               {item.image && (

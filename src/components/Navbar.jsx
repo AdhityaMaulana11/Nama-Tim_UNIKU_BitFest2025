@@ -222,7 +222,7 @@ export default function Navbar() {
                     : "text-[#0a2540] hover:text-[#002E5B]"
                 }
               >
-                Tentang UCIC
+                Berita
               </NavLink>
             </li>
           </ul>

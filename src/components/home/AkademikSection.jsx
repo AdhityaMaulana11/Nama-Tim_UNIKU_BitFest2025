@@ -22,7 +22,7 @@ export default function AkademikSection() {
 
       {/* Akademik Content */}
       <section className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white text-center drop-shadow-md mb-10">
+        <h2 className="text-3xl sm:text-5xl lg:text-5xl font-bold text-white text-center drop-shadow-md mb-10">
           AKADEMIK
         </h2>
 
