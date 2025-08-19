@@ -30,7 +30,7 @@ export default function NewsTabsSection() {
       </div>
 
       {/* Divider kuning */}
-      <hr className="border-0 border-b-2 border-yellow-500 w-[90%] mx-auto mb-6" />
+      <hr className="border-0 border-b-2 border-[#A48F03] w-[90%] mx-auto mb-6" />
 
       {/* Content Section */}
       <NewsContentSection data={activeData} />
